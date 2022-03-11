@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>some Document </title>
+    <script src="main.js"></script>
+</head>
+<style>
+     *{
+         margin: 0;
+         padding: 0;
+
+     }
+
+     .main{
+         padding: 20px;
+         text-align: center;
+         line-height: 100px;
+         font-size: 32px;
+     }
+    @media screen and (max-width:770px) {
+        .main h2{
+            font-size: 22px;
+        }
+        
+    }
+
+  
+
+
+
+    section{
+        padding: 20px;
+        width: 100%;
+        height: auto;
+        background-color: gray;
+    }
+    section h2{
+        text-align: center;
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+  form{
+      padding-top: 18px;
+    display: inline-block;
+    margin-left: 30%;
+    line-height: 30px;
+  }
+
+  .btn1{
+  margin-left: 30%;
+     margin-top: 14px;
+     width: 130px;
+     height: 50px;
+     border-radius: 10px;
+     background-color: blueviolet;
+     color: white;
+     cursor: pointer;
+  }
+
+  .div{
+      margin-top: 30px;
+      margin-left: 30%;
+  }
+
+.div > button{
+    width: 130px;
+    height: 50px;
+    background-color: antiquewhite;
+    color: black;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.text{
+    margin-left: 30%;
+    margin-top: 20px;
+     font-size: 22px;
+     
+}
+
+input{
+    height: 30px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+
+}
+
+.bottom{
+   margin-left: 30%;
+   margin-top: 14px;
+   font-size: 22px;
+   line-height: 40px;
+}
+
+@media screen and (max-width:500px) {
+    .main h2{
+       margin-left: 20px;
+    }
+
+    .main > img{
+        width: 80%;
+        margin-left: 40px;
+    }
+       
+       form{
+           margin-left: 7%;
+       }
+
+       .div{
+           margin-left: 10%;
+
+       }
+      .bottom{
+          margin-left: 10%;
+      }
+      .text{
+          margin-left: 10%;
+      }
+
+   }
+
+
+
+
+</style>
+<body>
+
+
+
+
+
+
+   <div class="main" id="main">
+       <h2>My personal Account</h2>
+       <img src="pics/p1.jpg" alt="" width="50%"> 
+
+   </div>
+
+
+
+   <section>
+    <h2>Calculator Insome</h2>
+       <form action="#">
+         <label for="income"> income :</label>
+         <input type="text" name="" id="inp1">
+           <h1>Total expensive</h1>
+         <br> 
+
+           <label for="income"> buy1 :</label>
+           <input type="text" name="" id="inp2"> <br>
+
+           <label for="income"> sell2 :</label>
+           <input type="text" name="" id="inp3"> <br> 
+
+           <label for="income"> sort2 :</label>
+           <input type="text" name="" id="inp4">
+
+          
+
+
+
+       </form>
+       <br>
+
+
+       <button class="btn1" id="btn1">Calculator</button>
+       <br><br>
+
+
+
+  <div class="text" id="balance-text1">    
+    <h3>Total Expensive : <span id="text1-total">00</span>   </h2>
+    <h1>balance : <span id="text1-balance">00</span> </h1>
+</div>
+
+
+
+       
+       <div class="div" id="div">
+           <label for="check">Save : </label>
+           <input type="text" id="inp5">
+           <button id="btn2">Save</button>
+       </div>
+
+
+
+       <div class="bottom" id="bottom">   
+
+
+
+      <h3>Total Expensive :  <span id="text2-total">00</span> </h2>
+        <h1>balance :  <span id="text2-balance">00</span> </h1>
+    </div>
+
+
+   </section>
+
+
+
+
+
+<p>asfdajsdfajjaisjdijsa</p>
+
+
+
+<!----------------------- for the javascript-------------------------->
+
+<script>
+var inp1 = document.getElementById('inp1').value;
+   var inp1 = inp1.parseInt()
+
+
+
+var inp2 =  parseInt(document.getElementById('inp2').value);
+
+var inp2 = inp2.parseInt()
+var inp3 =  parseInt(document.getElementById('inp3').value);
+var inp3 = inp3.parseInt()
+var inp4 =  parseInt(document.getElementById('inp4').value);
+var inp4 = inp4.parseInt()
+var inp5 = parseInt(document.getElementById('inp5').value);
+
+
+var btn1 = document.getElementById("btn1");
+var btn2 = document.getElementById('btn2');
+
+var total1 = document.getElementById("text1-total");
+var balance1 = document.getElementById("text1-balance");
+
+var total2 =  document.getElementById("text2-total");
+var balance = document.getElementById("text2-balance");
+
+
+btn1.addEventListener("click",function(){
+ total1.innerHTML = inp2 + inp3 + inp4;
+          
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+    
+</body>
+</html>
